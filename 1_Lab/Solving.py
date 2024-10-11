@@ -63,7 +63,7 @@ def actions(sets, formula, set_name, cnt_sets):
                     need_sets[k] = sets[j]
                     k += 1
                     break
-    if("~" in formula):                                     #Короче где-то тут тупизм с тем что только оддно дополнениие делается
+    if("~" in formula):                                   
         if("~" == formula[0] or "~" == formula[1]):
             need_sets[0] = addition(need_sets[0])
         else:
